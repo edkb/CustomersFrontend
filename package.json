@@ -1,0 +1,25 @@
+{
+  "name": "~TODO~",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview"
+  },
+  "devDependencies": {
+    "@smui/data-table": "^4.2.0",
+    "@sveltejs/adapter-node": "^1.0.0-next.22",
+    "@sveltejs/kit": "next",
+    "carbon-components-svelte": "^0.33.0",
+    "node-sass": "^6.0.0",
+    "svelte": "^3.34.0",
+    "svelte-preprocess": "^4.0.0",
+    "svelte-simple-datatables": "^0.1.25",
+    "tslib": "^2.0.0",
+    "typescript": "^4.0.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "svelte-headless-datatable": "^0.0.1-alpha.1"
+  }
+}
