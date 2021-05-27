@@ -1,6 +1,5 @@
 import preprocess from 'svelte-preprocess';
-import node from '@sveltejs/adapter-node';
-import netlify from '@sveltejs/adapter-node';
+import netlify from '@sveltejs/adapter-netlify';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
