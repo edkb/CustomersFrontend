@@ -1,5 +1,5 @@
 <script>
-    import { currentCustomer } from '../store.js';
+    import { currentCustomer, customerUpdated } from '../store.js';
 
     let editValues;
 
@@ -22,13 +22,13 @@
         // Awaiting response.json()
         const resData = await response.json();
 
-        if (resData === 'Updated successfully'){
-            alert('Customer successfully updated!');
-            window.location.href = '../';
+        if (resData === 'Updated successfully!'){
+            customerUpdated.set(true)
+            // window.location.href = '../';
         }
-
-        console.log(resData)
-
+        else {
+            customerUpdated.set(false)
+        }
     }
 
 </script>
@@ -48,12 +48,12 @@
         City <input type="text" bind:value={editValues.city} />
     </label>
 
-</article>
+    <div class="buttons">
+        <a href="/" on:click={updateCustomer}>Save</a>
+        <a href="/" >Cancel</a>
+    </div>
 
-<div class="buttons">
-    <button on:click={updateCustomer}>Save</button>
-    <button on:click={()=>{window.location.href = '../'}}>Cancel</button>
-</div>
+</article>
 
 <style lang="scss">
 
@@ -68,11 +68,18 @@
     }
 
     .buttons {
-        margin: 0 auto;
-            a {
-                display: inline-block;
-                margin: 1em 3em;
-            }
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        margin: 2em;
+    }
+
+    a {
+      display: inline-block;
+      padding: 1em 2em;
+      background: #4D90FE;
+      color: #353535;
+      border-radius: 10px;
     }
 
 </style>

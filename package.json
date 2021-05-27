@@ -21,6 +21,7 @@
   },
   "type": "module",
   "dependencies": {
+    "svelte-accessible-dialog": "^2.1.3",
     "svelte-headless-datatable": "^0.0.1-alpha.1"
   }
 }

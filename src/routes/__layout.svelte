@@ -3,7 +3,9 @@
 </script>
 
 <header>
-
+	<nav>
+		Header
+	</nav>
 </header>
 
 <main>
@@ -11,14 +13,22 @@
 </main>
 
 <footer>
+	Footer
 </footer>
 
 
-<style>
+<style lang="scss">
 
 	header {
 		background: #b9c6d2;
 		min-height: 5em;
+		font-size: 1.5rem;
+		color: #161616;
+		text-align: center;
+
+		nav {
+			margin-top: 2rem;
+		}
 	}
 	main {
 		flex: 1;
@@ -40,6 +50,8 @@
 		margin-top: auto;
 		background: #b9c6d2;
 		min-height: 3em;
+		font-size: 1.5rem;
+		color: #161616;
 	}
 
 	footer a {

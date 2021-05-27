@@ -8,9 +8,6 @@
 
 	import { currentCustomer } from '../../store.js';
 
-    function updateCurrentCustomer(selectedCustomer){
-    	currentCustomer.update(current => selectedCustomer)
-	}
 
 	const columns = [
         ["id", "ID"],
@@ -70,7 +67,7 @@
 				  	<td>{age}</td>
 				  	<td>{city}</td>
 					<td>
-						<a href="editCustomer" on:click={()=>{updateCurrentCustomer({id, name, age, city})}}>
+						<a href="editCustomer" on:click={()=>{currentCustomer.set({id, name, age, city})}}>
 							Edit
 						</a>
 					</td>
@@ -92,9 +89,12 @@
         display: inline-block;
     }
 
-    tr {
-        margin: 2em;
-    }
+    table {
+		width: 100%;
 
+		tr:hover{
+			background: #b9c6d2;
+		}
+	}
 
 </style>
