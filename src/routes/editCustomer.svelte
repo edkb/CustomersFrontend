@@ -82,7 +82,7 @@
     a {
       display: inline-block;
       padding: 1em 2em;
-      background: #4D90FE;
+      background: rgba(77, 144, 254, 0.72);
       color: #353535;
       border-radius: 10px;
     }
