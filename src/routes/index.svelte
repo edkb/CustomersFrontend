@@ -69,8 +69,6 @@
 <!--		</div>-->
 <!--	</div>-->
 
-
-<>
 </section>
 
 <style lang="scss">
