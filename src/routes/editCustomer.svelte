@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>Edit Customer</title>
+	<meta name="description" content="edit customers">
+</svelte:head>
+
 <script>
     import { currentCustomer, customerUpdated } from '../store.js';
 
