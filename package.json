@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@smui/data-table": "^4.2.0",
+    "@sveltejs/adapter-netlify": "^1.0.0-next.14",
     "@sveltejs/adapter-node": "^1.0.0-next.22",
     "@sveltejs/kit": "next",
     "carbon-components-svelte": "^0.33.0",
