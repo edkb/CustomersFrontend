@@ -1,6 +1,6 @@
 <svelte:head>
 	<title>Home</title>
-	<meta name="home page" content="home page">
+	<meta name="description" content="home page">
 </svelte:head>
 
 <script lang="ts">
@@ -49,6 +49,7 @@
 				bind:value={currentPage}
 				min="0"
 				max="30"
+				aria-label="page number"
 			/>
 		</div>
 		<div class="page-item">
@@ -58,6 +59,7 @@
 				bind:value={pageSize}
 				min="0"
 				max="30"
+				aria-label="page size"
 			>
 		</div>
 	</div>
