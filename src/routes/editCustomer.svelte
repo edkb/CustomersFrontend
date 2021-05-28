@@ -29,7 +29,7 @@
 
         if (resData === 'Updated successfully!'){
             customerUpdated.set(true)
-            // window.location.href = '../';
+            window.location.href = '../';
         }
         else {
             customerUpdated.set(false)
