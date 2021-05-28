@@ -36,6 +36,8 @@
         }
     }
 
+    $: disabled = ( editValues.age === null ) || (editValues.age.toString().length > 3 )
+
 </script>
 
 <article>
@@ -47,14 +49,14 @@
         Name <input type="text" bind:value={editValues.name} />
     </label>
     <label>
-        Age <input type="number" bind:value={editValues.age} />
+        Age <input type="number" min=1 bind:value={editValues.age} />
     </label>
     <label>
         City <input type="text" bind:value={editValues.city} />
     </label>
 
     <div class="buttons">
-        <a href="/" on:click={updateCustomer}>Save</a>
+        <a href="/" on:click={updateCustomer} class:disabled >Save</a>
         <a href="/" >Cancel</a>
     </div>
 
@@ -85,6 +87,11 @@
       background: rgba(77, 144, 254, 0.72);
       color: #353535;
       border-radius: 10px;
+    }
+
+    .disabled {
+        pointer-events: none;
+        background: #ccc;
     }
 
 </style>
