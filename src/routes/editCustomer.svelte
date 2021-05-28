@@ -49,7 +49,7 @@
         Name <input type="text" bind:value={editValues.name} />
     </label>
     <label>
-        Age <input type="number" bind:value={editValues.age} />
+        Age <input type="number" min=1 bind:value={editValues.age} />
     </label>
     <label>
         City <input type="text" bind:value={editValues.city} />
