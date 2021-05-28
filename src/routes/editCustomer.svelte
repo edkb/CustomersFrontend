@@ -16,6 +16,7 @@
     async function updateCustomer(){
         let url = `https://secret-anchorage-17084.herokuapp.com/customers/${editValues.id}`
         let response = await fetch(url, {
+			mode: 'no-cors',
             method: 'PUT',
             headers: {
                 'Content-type': 'application/json',

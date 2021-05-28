@@ -21,7 +21,7 @@
 
 	const fetchCustomers = () => {
 		promise = fetch(url, {
-			mode: 'cors',
+			mode: 'no-cors',
 			headers: {
 				'Content-Type': 'application/json',
 				'Access-Control-Allow-Origin': '*'
