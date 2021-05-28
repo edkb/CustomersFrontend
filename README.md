@@ -20,3 +20,8 @@ npm run build
 ```
 
 > You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+
+
+## Production
+
+The demo is running on netlify, using auto-deploys on push after connecting this repository to the service.
