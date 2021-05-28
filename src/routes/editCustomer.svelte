@@ -36,8 +36,8 @@
         }
     }
 
-    $: disabled = ( editValues.age.toString().length < 1 ) || (editValues.age.toString().length > 3 )
-    $: console.log(disabled)
+    $: disabled = ( editValues.age === null ) || (editValues.age.toString().length > 3 )
+
 </script>
 
 <article>
